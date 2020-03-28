@@ -41,7 +41,7 @@
         android:layout_height="0dp"
         android:fitsSystemWindows="true"
         android:importantForAccessibility="no"
-        app:srcCompat="@drawable/onboarding_io_19"
+        app:srcCompat="@drawable/corona_onboarding"
         app:layout_constraintBottom_toTopOf="@id/welcome_post_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +50,10 @@
 
     <TextView
         android:id="@+id/welcome_post_message"
-        style="@style/Widget.IOSched.OnboardingText"
+        style="@style/Widget.IOSched.OnboardingTextSmall"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/onboarding_welcome_google_io_post"
+        android:text="@string/help_prevent_covid"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@id/spacer"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"

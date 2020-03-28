@@ -44,7 +44,7 @@ class NetworkConferenceDataSource @Inject constructor(
             Timber.e(e)
             throw e
         }
-        val body = responseSource.body()?.byteStream() ?: return null
+        val body = responseSource.body?.byteStream() ?: return null
 
         Timber.d("Parsing new data")
         val parsedData = try {
@@ -67,7 +67,7 @@ class NetworkConferenceDataSource @Inject constructor(
         } catch (e: IOException) {
             return null
         }
-        val body = responseSource?.body()?.byteStream()
+        val body = responseSource?.body?.byteStream()
         if (body == null) {
             Timber.i("No cache found")
             return null

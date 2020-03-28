@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2018 Google LLC
+  ~ Copyright 2020 Google LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -16,7 +16,5 @@
   -->
 
 <resources>
-    <!-- Session Detail -->
-    <string name="session_detail_header_aspect" translatable="false">H,3:1</string>
     <string name="help_prevent_covid">Help prevent the spread of Covid by opting into collection of your location data. This helps us in isolating Covid cases.</string>
 </resources>

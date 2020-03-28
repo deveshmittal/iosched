@@ -114,6 +114,7 @@
          regardless of the user's text scale setting.
     -->
     <dimen name="profile_dialog_header_height">68dp</dimen>
+    <dimen name="onboarding_spacer2">56dp</dimen>
 
     <!-- per android.view.ViewGroup.LayoutParams -->
     <item name="match_parent" format="integer" type="dimen">-1</item>

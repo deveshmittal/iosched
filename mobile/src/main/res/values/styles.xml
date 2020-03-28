@@ -272,6 +272,12 @@
         <item name="android:lineSpacingExtra">6sp</item>
     </style>
 
+    <style name="Widget.IOSched.OnboardingTextSmall">
+        <item name="android:textAppearance">@style/TextAppearance.IOSched.H3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
     <!-- Speaker Detail -->
     <style name="Widget.IOSched.Speaker" />
 

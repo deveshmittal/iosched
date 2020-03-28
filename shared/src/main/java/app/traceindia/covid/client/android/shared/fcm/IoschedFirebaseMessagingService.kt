@@ -32,13 +32,13 @@ import java.util.concurrent.TimeUnit
  */
 class IoschedFirebaseMessagingService : DaggerFirebaseMessagingService() {
 
-    override fun onNewToken(token: String?) {
+    override fun onNewToken(token: String) {
         super.onNewToken(token)
         Timber.d("New firebase token: $token")
         // Nothing to do, we update the user's firebase token via FirebaseAuthStateUserDataSource
     }
 
-    override fun onMessageReceived(remoteMessage: RemoteMessage?) {
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
         Timber.d("Message data payload: ${remoteMessage?.data}")
         val data = remoteMessage?.data ?: return
         if (data[TRIGGER_EVENT_DATA_SYNC_key] == TRIGGER_EVENT_DATA_SYNC) {

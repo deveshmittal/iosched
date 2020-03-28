@@ -45,6 +45,7 @@ class CountdownView @JvmOverloads constructor(
     private val compositions = CompositionSet()
 
     private val root: View = LayoutInflater.from(context).inflate(R.layout.countdown, this, true)
+
     private var days1 by AnimateDigitDelegate(compositions) {
         root.findViewById(R.id.countdown_days_1)
     }

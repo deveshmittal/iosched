@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="onboarding_get_started" translation_description="The label for the button to start using the app.">सहभागी होण्यासाठी निवडा</string>
+    <string name="help_prevent_covid">आपला स्थान डेटा संग्रहित करुन कोविडच्या प्रसारास प्रतिबंधित करण्यात मदत करा. हे आम्हाला कोविड प्रकरणांमध्ये वेगळे करण्यात मदत करते.</string>
+</resources>

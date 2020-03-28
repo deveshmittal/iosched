@@ -20,6 +20,14 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
@@ -83,6 +91,10 @@ android {
         debug.java.srcDir 'src/debugRelease/java'
         release.java.srcDir 'src/debugRelease/java'
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
@@ -123,10 +135,11 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$rootProject.dagger"
     kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger"
 
+    implementation platform('com.google.firebase:firebase-bom:25.1.1')
+
     // Firebase
     api "com.google.firebase:firebase-auth:$rootProject.firebaseAuthVersion"
     api "com.google.firebase:firebase-config:$rootProject.firebaseConfigVersion"
-    api "com.google.firebase:firebase-core:$rootProject.firebaseCoreVersion"
     api "com.google.firebase:firebase-firestore:$rootProject.firebaseFirestoreVersion"
     api "com.google.firebase:firebase-functions:$rootProject.firebaseFunctionsVersion"
     api "com.google.firebase:firebase-messaging:$rootProject.firebaseMessagingVersion"

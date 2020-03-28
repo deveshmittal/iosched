@@ -22,6 +22,7 @@ import app.traceindia.covid.client.android.shared.BuildConfig
 import okhttp3.Cache
 import okhttp3.CacheControl
 import okhttp3.HttpUrl
+import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Protocol
 import okhttp3.Request
@@ -63,7 +64,7 @@ class ConferenceDataDownloader(
 
         Timber.d("Download started from: $url")
 
-        val httpBuilder = HttpUrl.parse(url)?.newBuilder()
+        val httpBuilder = url.toHttpUrlOrNull()?.newBuilder()
             ?: throw IllegalArgumentException("Malformed Session data URL")
         httpBuilder.addQueryParameter("bootstrapVersion", bootstrapVersion)
 
@@ -75,7 +76,7 @@ class ConferenceDataDownloader(
         // Blocking call
         val response = client.newCall(request).execute()
 
-        Timber.d("Downloaded bytes: ${response.body()?.contentLength() ?: 0}")
+        Timber.d("Downloaded bytes: ${response.body?.contentLength() ?: 0}")
 
         return response ?: throw IOException("Network error")
     }
@@ -86,7 +87,7 @@ class ConferenceDataDownloader(
 
         Timber.d("Fetching cached file for url: $url")
 
-        val httpBuilder = HttpUrl.parse(url)?.newBuilder()
+        val httpBuilder = url.toHttpUrlOrNull()?.newBuilder()
             ?: throw IllegalArgumentException("Malformed Session data URL")
         httpBuilder.addQueryParameter("bootstrapVersion", bootstrapVersion)
 
@@ -98,8 +99,8 @@ class ConferenceDataDownloader(
         // Blocking call
         val response = client.newCall(request).execute()
 
-        Timber.d("Loaded cache. Bytes: ${response.body()?.contentLength() ?: 0}")
-        if (response.code() == 504) {
+        Timber.d("Loaded cache. Bytes: ${response.body?.contentLength() ?: 0}")
+        if (response.code == 504) {
             return null
         }
         return response ?: throw IOException("Network error")

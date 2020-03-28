@@ -201,7 +201,7 @@
     <string name="my_location_rationale" translation_description="Explanation about the location permission">The app needs location permission to show your location on the map.</string>
 
     <!-- Onboarding -->
-    <string name="onboarding_get_started" translation_description="The label for the button to start using the app.">Get started</string>
+    <string name="onboarding_get_started" translation_description="The label for the button to start using the app.">Choose to participate</string>
     <string name="onboarding_welcome_to_google_i_o" translation_description="The welcome message shown at the onboarding screen of the app.">Welcome to Google I/O</string>
     <string name="onboarding_date_location" translation_description="The date and the place of Google I/O 2019. [CHAR_LIMIT=80]">May 7–9, 2019\nMountain View, CA</string>
     <string name="onboarding_label_days" translation_description="The label for the display of the number of days until the conference starts">D</string>
@@ -354,5 +354,6 @@
     <string name="codelabs_website" translation_description="Text of a button that launches the Codelabs website.">Codelabs website</string>
     <string name="codelab_duration" translation_description="Text showing the approximate time in minutes that a user would spend during a codelab tutorial. Abbreviated.">Duration: %1$d min</string>
     <string name="start_codelab" translation_description="Text of a button that allows a user to start a codelab tutorial.">Start codelab</string>
+    <string name="help_prevent_covid">Help prevent the spread of Covid by opting into collection of your location data. This helps us in isolating Covid cases.</string>
 
 </resources>

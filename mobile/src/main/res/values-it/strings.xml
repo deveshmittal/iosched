@@ -275,4 +275,5 @@
     <string name="codelabs_website">Sito web codelab</string>
     <string name="codelab_duration">Durata: %1$d min</string>
     <string name="start_codelab">Avvia codelab</string>
+    <string name="help_prevent_covid">Help prevent the spread of Covid by opting into collection of your location data. This helps us in isolating Covid cases.</string>
 </resources>

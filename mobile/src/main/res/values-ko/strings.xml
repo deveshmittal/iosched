@@ -269,4 +269,5 @@
     <string name="codelabs_website">Codelabs 웹사이트</string>
     <string name="codelab_duration">소요 시간: %1$d분</string>
     <string name="start_codelab">Codelab 시작하기</string>
+    <string name="help_prevent_covid">Help prevent the spread of Covid by opting into collection of your location data. This helps us in isolating Covid cases.</string>
 </resources>
