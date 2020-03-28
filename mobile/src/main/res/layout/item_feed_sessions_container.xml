@@ -23,11 +23,11 @@
 
         <variable
             name="sessionContainerState"
-            type="com.google.samples.apps.iosched.ui.feed.FeedSessions" />
+            type="app.traceindia.covid.client.android.ui.feed.FeedSessions" />
 
         <variable
             name="eventListener"
-            type="com.google.samples.apps.iosched.ui.feed.FeedEventListener" />
+            type="app.traceindia.covid.client.android.ui.feed.FeedEventListener" />
 
     </data>
 

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.di
+package app.traceindia.covid.client.android.shared.di
 
-import com.google.samples.apps.iosched.shared.data.job.ConferenceDataService
-import com.google.samples.apps.iosched.shared.fcm.IoschedFirebaseMessagingService
+import app.traceindia.covid.client.android.shared.data.job.ConferenceDataService
+import app.traceindia.covid.client.android.shared.fcm.IoschedFirebaseMessagingService
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

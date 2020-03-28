@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.fcm
+package app.traceindia.covid.client.android.shared.fcm
 
 class StagingTopicSubscriber : TopicSubscriber {
     override fun subscribeToScheduleUpdates() {

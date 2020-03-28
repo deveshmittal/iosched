@@ -32,70 +32,70 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_what_to_bring"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_what_to_bring_description"
             app:cardTitle="@string/travel_what_to_bring_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_hotels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_hotels_description"
             app:cardTitle="@string/travel_hotels_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_getting_to_mountain_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_getting_to_mountain_view_description"
             app:cardTitle="@string/travel_getting_to_mountain_view_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_getting_to_shoreline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_getting_to_shoreline_description"
             app:cardTitle="@string/travel_getting_to_shoreline_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_shuttle_service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_shuttle_service_description"
             app:cardTitle="@string/travel_shuttle_service_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_off_site_parking"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_off_site_parking_description"
             app:cardTitle="@string/travel_off_site_parking_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_public_transportation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_for_public_transportation_description"
             app:cardTitle="@string/travel_for_public_transportation_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_biking"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_biking_description"
             app:cardTitle="@string/travel_biking_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_ridesharing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/travel_ridesharing_description"
             app:cardTitle="@string/travel_ridesharing_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/travel_airport_transfers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

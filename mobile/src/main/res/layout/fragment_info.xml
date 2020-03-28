@@ -56,7 +56,7 @@
             android:layout_height="0dp"
             android:background="?attr/colorSurface"
             android:fitsSystemWindows="true"
-            app:layout_behavior="com.google.samples.apps.iosched.util.StatusBarScrimBehavior" />
+            app:layout_behavior="app.traceindia.covid.client.android.util.StatusBarScrimBehavior" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"
@@ -66,7 +66,7 @@
             app:pageMargin="@{@dimen/info_page_margin}"
             app:pageMarginDrawable="@{@drawable/page_margin}" />
 
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <app.traceindia.covid.client.android.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"

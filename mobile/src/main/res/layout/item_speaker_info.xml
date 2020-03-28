@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.speaker.SpeakerViewModel" />
+            type="app.traceindia.covid.client.android.ui.speaker.SpeakerViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

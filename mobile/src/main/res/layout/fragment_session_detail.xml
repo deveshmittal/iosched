@@ -22,7 +22,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailViewModel" />
+            type="app.traceindia.covid.client.android.ui.sessiondetail.SessionDetailViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -141,7 +141,7 @@
             app:elevation="6dp"
             app:fabAlignmentMode="end" />
 
-        <com.google.samples.apps.iosched.ui.reservation.StarReserveFab
+        <app.traceindia.covid.client.android.ui.reservation.StarReserveFab
             android:id="@+id/session_detail_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -162,11 +162,11 @@
             android:layout_gravity="bottom"
             android:background="?attr/colorSurface"
             android:fitsSystemWindows="true"
-            app:layout_behavior="com.google.samples.apps.iosched.util.NavigationBarScrimBehavior" />
+            app:layout_behavior="app.traceindia.covid.client.android.util.NavigationBarScrimBehavior" />
 
         <!-- A custom snackbar implementation for more control over positioning i.e. above the FAB,
              and to control its entry/exit animation. -->
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <app.traceindia.covid.client.android.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"

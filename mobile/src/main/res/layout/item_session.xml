@@ -25,11 +25,11 @@
 
         <variable
             name="userSession"
-            type="com.google.samples.apps.iosched.model.userdata.UserSession" />
+            type="app.traceindia.covid.client.android.model.userdata.UserSession" />
 
         <variable
             name="eventListener"
-            type="com.google.samples.apps.iosched.ui.sessioncommon.EventActions" />
+            type="app.traceindia.covid.client.android.ui.sessioncommon.EventActions" />
 
         <variable
             name="showReservations"
@@ -91,7 +91,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.samples.apps.iosched.ui.reservation.ReservationTextView
+        <app.traceindia.covid.client.android.ui.reservation.ReservationTextView
             android:id="@+id/reservation_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
             app:barrierDirection="bottom"
             app:constraint_referenced_ids="livestream_icon,length_location" />
 
-        <com.google.samples.apps.iosched.widget.NoTouchRecyclerView
+        <app.traceindia.covid.client.android.widget.NoTouchRecyclerView
             android:id="@+id/tags"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

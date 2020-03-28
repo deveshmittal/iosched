@@ -23,11 +23,11 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.agenda.AgendaViewModel" />
+            type="app.traceindia.covid.client.android.ui.agenda.AgendaViewModel" />
 
         <variable
             name="activityViewModel"
-            type="com.google.samples.apps.iosched.ui.MainActivityViewModel" />
+            type="app.traceindia.covid.client.android.ui.MainActivityViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.userevent
+package app.traceindia.covid.client.android.shared.data.userevent
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.samples.apps.iosched.model.Session
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.model.reservations.ReservationRequestResult
-import com.google.samples.apps.iosched.model.reservations.ReservationRequestResult.ReservationRequestStatus.RESERVE_SUCCEEDED
-import com.google.samples.apps.iosched.model.userdata.UserEvent
-import com.google.samples.apps.iosched.shared.data.BootstrapConferenceDataSource
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.CancelAction
-import com.google.samples.apps.iosched.shared.domain.users.ReservationRequestAction.RequestAction
-import com.google.samples.apps.iosched.shared.domain.users.StarUpdatedStatus
-import com.google.samples.apps.iosched.shared.domain.users.SwapRequestAction
-import com.google.samples.apps.iosched.shared.result.Result
+import app.traceindia.covid.client.android.model.Session
+import app.traceindia.covid.client.android.model.SessionId
+import app.traceindia.covid.client.android.model.reservations.ReservationRequestResult
+import app.traceindia.covid.client.android.model.reservations.ReservationRequestResult.ReservationRequestStatus.RESERVE_SUCCEEDED
+import app.traceindia.covid.client.android.model.userdata.UserEvent
+import app.traceindia.covid.client.android.shared.data.BootstrapConferenceDataSource
+import app.traceindia.covid.client.android.shared.domain.users.ReservationRequestAction
+import app.traceindia.covid.client.android.shared.domain.users.ReservationRequestAction.CancelAction
+import app.traceindia.covid.client.android.shared.domain.users.ReservationRequestAction.RequestAction
+import app.traceindia.covid.client.android.shared.domain.users.StarUpdatedStatus
+import app.traceindia.covid.client.android.shared.domain.users.SwapRequestAction
+import app.traceindia.covid.client.android.shared.result.Result
 
 /**
  * Returns data loaded from a local JSON file for development and testing.

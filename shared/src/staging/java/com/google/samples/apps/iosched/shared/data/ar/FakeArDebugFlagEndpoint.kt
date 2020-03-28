@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.ar
+package app.traceindia.covid.client.android.shared.data.ar
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.samples.apps.iosched.shared.result.Result
+import app.traceindia.covid.client.android.shared.result.Result
 
 object FakeArDebugFlagEndpoint : ArDebugFlagEndpoint {
 

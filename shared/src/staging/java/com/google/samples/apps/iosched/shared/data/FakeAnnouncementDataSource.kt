@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package app.traceindia.covid.client.android.shared.data
 
-import com.google.samples.apps.iosched.model.Announcement
-import com.google.samples.apps.iosched.shared.data.feed.AnnouncementDataSource
-import com.google.samples.apps.iosched.shared.util.TimeUtils
+import app.traceindia.covid.client.android.model.Announcement
+import app.traceindia.covid.client.android.shared.data.feed.AnnouncementDataSource
+import app.traceindia.covid.client.android.shared.util.TimeUtils
 
 /**
  * Returns hardcoded data for development and testing.

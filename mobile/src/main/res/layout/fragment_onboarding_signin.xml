@@ -23,7 +23,7 @@
 
         <variable
             name="activityViewModel"
-            type="com.google.samples.apps.iosched.ui.onboarding.OnboardingViewModel" />
+            type="app.traceindia.covid.client.android.ui.onboarding.OnboardingViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

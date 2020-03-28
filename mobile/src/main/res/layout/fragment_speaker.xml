@@ -24,11 +24,11 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.speaker.SpeakerViewModel" />
+            type="app.traceindia.covid.client.android.ui.speaker.SpeakerViewModel" />
 
         <variable
             name="headshotLoadListener"
-            type="com.google.samples.apps.iosched.ui.speaker.ImageLoadListener" />
+            type="app.traceindia.covid.client.android.ui.speaker.ImageLoadListener" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -96,7 +96,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <app.traceindia.covid.client.android.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"

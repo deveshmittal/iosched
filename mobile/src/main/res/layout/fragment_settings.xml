@@ -20,11 +20,11 @@
 
     <data>
 
-        <import type="com.google.samples.apps.iosched.BuildConfig" />
+        <import type="app.traceindia.covid.client.android.BuildConfig" />
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.settings.SettingsViewModel" />
+            type="app.traceindia.covid.client.android.ui.settings.SettingsViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -172,7 +172,7 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <app.traceindia.covid.client.android.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"

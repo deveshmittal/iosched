@@ -21,11 +21,11 @@
 
     <data>
 
-        <import type="com.google.samples.apps.iosched.R" />
+        <import type="app.traceindia.covid.client.android.R" />
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.map.MapViewModel" />
+            type="app.traceindia.covid.client.android.ui.map.MapViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -104,7 +104,7 @@
                 android:background="@drawable/filters_sheet_background"
                 android:backgroundTint="?attr/colorSurface"
                 android:elevation="@dimen/bottom_sheet_elevation"
-                app:layout_behavior="com.google.samples.apps.iosched.widget.BottomSheetBehavior"
+                app:layout_behavior="app.traceindia.covid.client.android.widget.BottomSheetBehavior"
                 app:behavior_hideable="true"
                 app:behavior_peekHeight="@dimen/map_bottom_sheet_peek_height"
                 app:bottomSheetState="@{viewModel.bottomSheetStateEvent}">

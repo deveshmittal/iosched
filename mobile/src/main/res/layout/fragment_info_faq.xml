@@ -32,14 +32,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_when_and_where_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardDescription="@string/faq_when_and_where_description"
             app:cardTitle="@string/faq_when_and_where_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_how_can_stay_informed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             app:cardDescription="@string/faq_how_can_i_stay_informed_description"
             app:cardTitle="@string/faq_how_can_i_stay_informed_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_will_the_sessions_be_english"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             app:cardDescription="@string/faq_will_the_sessions_be_english_description"
             app:cardTitle="@string/faq_will_the_sessions_be_english_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_can_i_reserve_sessions_ahead_of_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             app:cardDescription="@string/faq_can_i_reserve_sessions_ahead_of_time_description"
             app:cardTitle="@string/faq_can_i_reserve_sessions_ahead_of_time_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_best_way_to_get_to_shoreline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             app:cardDescription="@string/faq_best_way_to_get_to_shoreline_description"
             app:cardTitle="@string/faq_best_way_to_get_to_shoreline_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_pick_up_badge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
             app:cardDescription="@string/faq_where_and_when_can_i_pick_up_badge_description"
             app:cardTitle="@string/faq_where_and_when_can_i_pick_up_badge_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_want_a_front_row_seat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             app:cardDescription="@string/faq_want_a_front_row_seat_at_keynote_description"
             app:cardTitle="@string/faq_want_a_front_row_seat_at_keynote_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_what_should_i_wear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             app:cardDescription="@string/faq_what_should_i_wear_description"
             app:cardTitle="@string/faq_what_should_i_wear_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_onsite_food_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             app:cardDescription="@string/faq_onsite_food_options_description"
             app:cardTitle="@string/faq_onsite_food_options_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_if_i_lose_something_else"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
             app:cardDescription="@string/faq_if_i_lose_something_onsite_description"
             app:cardTitle="@string/faq_if_i_lose_something_onsite_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_after_dark_program"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
             app:cardDescription="@string/faq_after_dark_program_description"
             app:cardTitle="@string/faq_after_dark_program_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_accessibility_needs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
             app:cardDescription="@string/faq_accessibility_needs_description"
             app:cardTitle="@string/faq_accessibility_needs_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_support_for_parents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
             app:cardDescription="@string/faq_support_for_expectant_mothers_parent_description"
             app:cardTitle="@string/faq_support_for_expectant_mothers_parents_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_comunity_guidelines"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
             app:cardDescription="@string/faq_community_guidelines_and_policy_description"
             app:cardTitle="@string/faq_community_guidelines_and_policy_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_sessions_be_livestreamed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
             app:cardDescription="@string/faq_sessions_be_live_streamed_question_description"
             app:cardTitle="@string/faq_sessions_be_live_streamed_question_title" />
 
-        <com.google.samples.apps.iosched.widget.CollapsibleCard
+        <app.traceindia.covid.client.android.widget.CollapsibleCard
             android:id="@+id/faq_celebrate_io"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

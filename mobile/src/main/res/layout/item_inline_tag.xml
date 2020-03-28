@@ -24,7 +24,7 @@
 
         <variable
             name="tag"
-            type="com.google.samples.apps.iosched.model.Tag" />
+            type="app.traceindia.covid.client.android.model.Tag" />
     </data>
 
     <TextView

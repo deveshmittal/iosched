@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.di
+package app.traceindia.covid.client.android.di
 
 import android.content.Context
-import com.google.samples.apps.iosched.shared.data.login.StagingAuthenticatedUser
-import com.google.samples.apps.iosched.shared.data.login.StagingSignInHandler
-import com.google.samples.apps.iosched.shared.data.login.datasources.StagingAuthStateUserDataSource
-import com.google.samples.apps.iosched.shared.data.login.datasources.StagingRegisteredUserDataSource
-import com.google.samples.apps.iosched.shared.data.signin.datasources.AuthIdDataSource
-import com.google.samples.apps.iosched.shared.data.signin.datasources.AuthStateUserDataSource
-import com.google.samples.apps.iosched.shared.data.signin.datasources.RegisteredUserDataSource
-import com.google.samples.apps.iosched.shared.domain.sessions.NotificationAlarmUpdater
-import com.google.samples.apps.iosched.util.signin.SignInHandler
+import app.traceindia.covid.client.android.shared.data.login.StagingAuthenticatedUser
+import app.traceindia.covid.client.android.shared.data.login.StagingSignInHandler
+import app.traceindia.covid.client.android.shared.data.login.datasources.StagingAuthStateUserDataSource
+import app.traceindia.covid.client.android.shared.data.login.datasources.StagingRegisteredUserDataSource
+import app.traceindia.covid.client.android.shared.data.signin.datasources.AuthIdDataSource
+import app.traceindia.covid.client.android.shared.data.signin.datasources.AuthStateUserDataSource
+import app.traceindia.covid.client.android.shared.data.signin.datasources.RegisteredUserDataSource
+import app.traceindia.covid.client.android.shared.domain.sessions.NotificationAlarmUpdater
+import app.traceindia.covid.client.android.util.signin.SignInHandler
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

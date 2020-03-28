@@ -22,7 +22,7 @@
 
         <variable
             name="question"
-            type="com.google.samples.apps.iosched.ui.sessiondetail.Question" />
+            type="app.traceindia.covid.client.android.ui.sessiondetail.Question" />
 
     </data>
 
@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="How are you?" />
 
-        <com.google.samples.apps.iosched.widget.SimpleRatingBar
+        <app.traceindia.covid.client.android.widget.SimpleRatingBar
             android:id="@+id/rating"
             style="@style/Widget.AppCompat.SeekBar.Discrete"
             android:layout_width="match_parent"

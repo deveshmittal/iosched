@@ -22,7 +22,7 @@
 
         <variable
             name="sectionHeader"
-            type="com.google.samples.apps.iosched.ui.SectionHeader" />
+            type="app.traceindia.covid.client.android.ui.SectionHeader" />
     </data>
 
     <TextView

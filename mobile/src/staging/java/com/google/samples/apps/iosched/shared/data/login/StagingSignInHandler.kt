@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.login
+package app.traceindia.covid.client.android.shared.data.login
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.samples.apps.iosched.shared.data.login.datasources.StagingAuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.result.Result
-import com.google.samples.apps.iosched.util.signin.SignInHandler
-import com.google.samples.apps.iosched.util.signin.SignInResult
-import com.google.samples.apps.iosched.util.signin.SignInSuccess
+import app.traceindia.covid.client.android.shared.data.login.datasources.StagingAuthenticatedUserInfo
+import app.traceindia.covid.client.android.shared.data.signin.AuthenticatedUserInfo
+import app.traceindia.covid.client.android.shared.result.Result
+import app.traceindia.covid.client.android.util.signin.SignInHandler
+import app.traceindia.covid.client.android.util.signin.SignInResult
+import app.traceindia.covid.client.android.util.signin.SignInSuccess
 import timber.log.Timber
 
 /**

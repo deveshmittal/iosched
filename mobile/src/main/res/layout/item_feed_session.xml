@@ -29,11 +29,11 @@
 
         <variable
             name="userSession"
-            type="com.google.samples.apps.iosched.model.userdata.UserSession" />
+            type="app.traceindia.covid.client.android.model.userdata.UserSession" />
 
         <variable
             name="eventListener"
-            type="com.google.samples.apps.iosched.ui.feed.FeedEventListener" />
+            type="app.traceindia.covid.client.android.ui.feed.FeedEventListener" />
 
     </data>
 

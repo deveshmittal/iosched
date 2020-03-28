@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@id/navigation_schedule"
-        android:name="com.google.samples.apps.iosched.ui.schedule.ScheduleFragment"
+        android:name="app.traceindia.covid.client.android.ui.schedule.ScheduleFragment"
         android:label="@string/title_schedule"
         tools:layout="@layout/fragment_schedule">
         <argument
@@ -44,25 +44,25 @@
 
     <fragment
         android:id="@id/navigation_info"
-        android:name="com.google.samples.apps.iosched.ui.info.InfoFragment"
+        android:name="app.traceindia.covid.client.android.ui.info.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
 
     <fragment
         android:id="@id/navigation_agenda"
-        android:name="com.google.samples.apps.iosched.ui.agenda.AgendaFragment"
+        android:name="app.traceindia.covid.client.android.ui.agenda.AgendaFragment"
         android:label="@string/agenda"
         tools:layout="@layout/fragment_agenda" />
 
     <fragment
         android:id="@id/navigation_settings"
-        android:name="com.google.samples.apps.iosched.ui.settings.SettingsFragment"
+        android:name="app.traceindia.covid.client.android.ui.settings.SettingsFragment"
         android:label="@string/settings_title"
         tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@id/navigation_feed"
-        android:name="com.google.samples.apps.iosched.ui.feed.FeedFragment"
+        android:name="app.traceindia.covid.client.android.ui.feed.FeedFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_feed">
         <action
@@ -97,7 +97,7 @@
 
     <fragment
         android:id="@id/navigation_map"
-        android:name="com.google.samples.apps.iosched.ui.map.MapFragment"
+        android:name="app.traceindia.covid.client.android.ui.map.MapFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map">
         <!-- Navigation library doesn't allow nullable arguments of an enum type, so we have to use
@@ -121,7 +121,7 @@
 
     <fragment
         android:id="@id/navigation_codelabs"
-        android:name="com.google.samples.apps.iosched.ui.codelabs.CodelabsFragment"
+        android:name="app.traceindia.covid.client.android.ui.codelabs.CodelabsFragment"
         android:label="@string/event_codelabs_title"
         tools:layout="@layout/fragment_codelabs">
         <action
@@ -140,7 +140,7 @@
 
     <fragment
         android:id="@id/navigation_search"
-        android:name="com.google.samples.apps.iosched.ui.search.SearchFragment"
+        android:name="app.traceindia.covid.client.android.ui.search.SearchFragment"
         tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/to_session_detail"
@@ -152,7 +152,7 @@
 
     <fragment
         android:id="@id/navigation_session_detail"
-        android:name="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailFragment"
+        android:name="app.traceindia.covid.client.android.ui.sessiondetail.SessionDetailFragment"
         tools:layout="@layout/fragment_session_detail">
         <argument
             android:name="session_id"
@@ -170,7 +170,7 @@
 
     <fragment
         android:id="@id/navigation_speaker_detail"
-        android:name="com.google.samples.apps.iosched.ui.speaker.SpeakerFragment"
+        android:name="app.traceindia.covid.client.android.ui.speaker.SpeakerFragment"
         tools:layout="@layout/fragment_speaker">
         <argument
             android:name="speaker_id"
@@ -187,7 +187,7 @@
     -->
     <fragment
         android:id="@id/navigation_map_sublevel"
-        android:name="com.google.samples.apps.iosched.ui.map.MapFragment"
+        android:name="app.traceindia.covid.client.android.ui.map.MapFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map" >
         <!-- Unfortunately we have to duplicate the args. -->
@@ -209,13 +209,13 @@
 
     <fragment
         android:id="@id/navigation_no_network_ar"
-        android:name="com.google.samples.apps.iosched.ui.ar.NoNetworkConnectionFragment"
+        android:name="app.traceindia.covid.client.android.ui.ar.NoNetworkConnectionFragment"
         android:label="@string/no_network_connection"
         tools:layout="@layout/fragment_no_network" />
 
     <fragment
         android:id="@id/navigation_phone_does_not_support_arcore"
-        android:name="com.google.samples.apps.iosched.ui.ar.ArCoreNotSupportedFragment"
+        android:name="app.traceindia.covid.client.android.ui.ar.ArCoreNotSupportedFragment"
         android:label="@string/phone_does_not_support_arcore_title"
         tools:layout="@layout/fragment_arcore_not_supported" />
 </navigation>

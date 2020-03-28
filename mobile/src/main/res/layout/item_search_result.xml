@@ -23,11 +23,11 @@
 
         <variable
             name="eventListener"
-            type="com.google.samples.apps.iosched.ui.search.SearchResultActionHandler" />
+            type="app.traceindia.covid.client.android.ui.search.SearchResultActionHandler" />
 
         <variable
             name="searchResult"
-            type="com.google.samples.apps.iosched.ui.search.SearchResult" />
+            type="app.traceindia.covid.client.android.ui.search.SearchResult" />
     </data>
 
 

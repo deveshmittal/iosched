@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package app.traceindia.covid.client.android.shared.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.samples.apps.iosched.model.ConferenceWifiInfo
-import com.google.samples.apps.iosched.shared.data.config.AppConfigDataSource
-import com.google.samples.apps.iosched.shared.data.config.StringsChangedCallback
+import app.traceindia.covid.client.android.model.ConferenceWifiInfo
+import app.traceindia.covid.client.android.shared.data.config.AppConfigDataSource
+import app.traceindia.covid.client.android.shared.data.config.StringsChangedCallback
 
 class FakeAppConfigDataSource : AppConfigDataSource {
 

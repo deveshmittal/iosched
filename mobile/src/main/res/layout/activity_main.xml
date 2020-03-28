@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 
-<com.google.samples.apps.iosched.widget.NavigationBarContentFrameLayout
+<app.traceindia.covid.client.android.widget.NavigationBarContentFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,7 +27,7 @@
         android:id="@+id/drawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.google.samples.apps.iosched.ui.MainActivity"
+        tools:context="app.traceindia.covid.client.android.ui.MainActivity"
         tools:openDrawer="start">
 
         <FrameLayout
@@ -38,7 +38,7 @@
 
             <fragment
                 android:id="@+id/nav_host_fragment"
-                android:name="com.google.samples.apps.iosched.ui.DispatchInsetsNavHostFragment"
+                android:name="app.traceindia.covid.client.android.ui.DispatchInsetsNavHostFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:defaultNavHost="true"
@@ -50,7 +50,7 @@
                 android:layout_height="0dp"
                 android:background="@color/status_bar_scrim" />
 
-            <com.google.samples.apps.iosched.widget.FadingSnackbar
+            <app.traceindia.covid.client.android.widget.FadingSnackbar
                 android:id="@+id/snackbar"
                 android:layout_width="@dimen/snackbar_width"
                 android:layout_height="wrap_content"
@@ -70,4 +70,4 @@
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
-</com.google.samples.apps.iosched.widget.NavigationBarContentFrameLayout>
+</app.traceindia.covid.client.android.widget.NavigationBarContentFrameLayout>

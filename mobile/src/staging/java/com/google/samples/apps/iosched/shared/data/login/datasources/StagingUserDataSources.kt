@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.login.datasources
+package app.traceindia.covid.client.android.shared.data.login.datasources
 
 import android.content.ContentResolver
 import android.content.Context
@@ -22,13 +22,13 @@ import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.firebase.auth.UserInfo
-import com.google.samples.apps.iosched.shared.R
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfo
-import com.google.samples.apps.iosched.shared.data.signin.AuthenticatedUserInfoBasic
-import com.google.samples.apps.iosched.shared.data.signin.datasources.AuthStateUserDataSource
-import com.google.samples.apps.iosched.shared.data.signin.datasources.RegisteredUserDataSource
-import com.google.samples.apps.iosched.shared.domain.sessions.NotificationAlarmUpdater
-import com.google.samples.apps.iosched.shared.result.Result
+import app.traceindia.covid.client.android.shared.R
+import app.traceindia.covid.client.android.shared.data.signin.AuthenticatedUserInfo
+import app.traceindia.covid.client.android.shared.data.signin.AuthenticatedUserInfoBasic
+import app.traceindia.covid.client.android.shared.data.signin.datasources.AuthStateUserDataSource
+import app.traceindia.covid.client.android.shared.data.signin.datasources.RegisteredUserDataSource
+import app.traceindia.covid.client.android.shared.domain.sessions.NotificationAlarmUpdater
+import app.traceindia.covid.client.android.shared.result.Result
 
 /**
  * A configurable [RegisteredUserDataSource] used for staging.

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data
+package app.traceindia.covid.client.android.shared.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.samples.apps.iosched.model.SessionId
-import com.google.samples.apps.iosched.shared.data.feedback.FeedbackEndpoint
-import com.google.samples.apps.iosched.shared.result.Result
+import app.traceindia.covid.client.android.model.SessionId
+import app.traceindia.covid.client.android.shared.data.feedback.FeedbackEndpoint
+import app.traceindia.covid.client.android.shared.result.Result
 
 object FakeFeedbackEndpoint : FeedbackEndpoint {
 

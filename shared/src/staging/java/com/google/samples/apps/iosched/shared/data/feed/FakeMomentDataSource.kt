@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.iosched.shared.data.feed
+package app.traceindia.covid.client.android.shared.data.feed
 
-import com.google.samples.apps.iosched.model.Moment
-import com.google.samples.apps.iosched.shared.util.ColorUtils
+import app.traceindia.covid.client.android.model.Moment
+import app.traceindia.covid.client.android.shared.util.ColorUtils
 import org.threeten.bp.ZonedDateTime
 
 /**

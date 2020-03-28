@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.info.EventInfoViewModel" />
+            type="app.traceindia.covid.client.android.ui.info.EventInfoViewModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

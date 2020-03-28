@@ -24,7 +24,7 @@
 
         <variable
             name="variant"
-            type="com.google.samples.apps.iosched.ui.map.MapVariant" />
+            type="app.traceindia.covid.client.android.ui.map.MapVariant" />
 
         <variable
             name="isChecked"

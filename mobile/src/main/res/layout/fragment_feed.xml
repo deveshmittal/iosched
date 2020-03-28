@@ -24,7 +24,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.feed.FeedViewModel" />
+            type="app.traceindia.covid.client.android.ui.feed.FeedViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -70,7 +70,7 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <app.traceindia.covid.client.android.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

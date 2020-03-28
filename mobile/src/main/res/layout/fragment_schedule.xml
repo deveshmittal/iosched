@@ -23,7 +23,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.schedule.ScheduleViewModel" />
+            type="app.traceindia.covid.client.android.ui.schedule.ScheduleViewModel" />
 
         <variable
             name="isEmpty"
@@ -46,9 +46,9 @@
             android:layout_height="0dp"
             android:background="?attr/colorSurface"
             android:fitsSystemWindows="true"
-            app:layout_behavior="com.google.samples.apps.iosched.util.StatusBarScrimBehavior" />
+            app:layout_behavior="app.traceindia.covid.client.android.util.StatusBarScrimBehavior" />
 
-        <com.google.samples.apps.iosched.widget.CustomSwipeRefreshLayout
+        <app.traceindia.covid.client.android.widget.CustomSwipeRefreshLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -86,7 +86,7 @@
 
             </FrameLayout>
 
-        </com.google.samples.apps.iosched.widget.CustomSwipeRefreshLayout>
+        </app.traceindia.covid.client.android.widget.CustomSwipeRefreshLayout>
 
         <!-- TODO(b/72711711): Provide a better loading indicator -->
         <ProgressBar
@@ -100,7 +100,7 @@
 
         <!-- A custom snackbar implementation for more control over positioning i.e. above the
              FAB, to control its entry/exit animation. -->
-        <com.google.samples.apps.iosched.widget.FadingSnackbar
+        <app.traceindia.covid.client.android.widget.FadingSnackbar
             android:id="@+id/snackbar"
             android:layout_width="@dimen/snackbar_width"
             android:layout_height="wrap_content"
@@ -127,12 +127,12 @@
           -->
         <fragment
             android:id="@+id/filter_sheet"
-            android:name="com.google.samples.apps.iosched.ui.schedule.filters.ScheduleFilterFragment"
+            android:name="app.traceindia.covid.client.android.ui.schedule.filters.ScheduleFilterFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
             android:layout_marginBottom="4dp"
-            app:layout_behavior="com.google.samples.apps.iosched.widget.BottomSheetBehavior"
+            app:layout_behavior="app.traceindia.covid.client.android.widget.BottomSheetBehavior"
             app:behavior_hideable="true"
             app:behavior_peekHeight="@dimen/schedule_bottom_sheet_peek_height"
             app:behavior_skipCollapsed="true"

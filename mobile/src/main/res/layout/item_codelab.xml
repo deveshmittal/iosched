@@ -24,7 +24,7 @@
 
         <variable
             name="codelab"
-            type="com.google.samples.apps.iosched.model.Codelab" />
+            type="app.traceindia.covid.client.android.model.Codelab" />
 
         <variable
             name="isExpanded"
@@ -32,7 +32,7 @@
 
         <variable
             name="actionHandler"
-            type="com.google.samples.apps.iosched.ui.codelabs.CodelabsActionsHandler" />
+            type="app.traceindia.covid.client.android.ui.codelabs.CodelabsActionsHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -98,7 +98,7 @@
             tools:text="@sample/codelabs.json/codelabs/duration"
             tools:visibility="visible" />
 
-        <com.google.samples.apps.iosched.widget.NoTouchRecyclerView
+        <app.traceindia.covid.client.android.widget.NoTouchRecyclerView
             android:id="@+id/codelab_tags"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

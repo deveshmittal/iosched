@@ -22,7 +22,7 @@
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.info.EventInfoViewModel" />
+            type="app.traceindia.covid.client.android.ui.info.EventInfoViewModel" />
 
         <variable
             name="showAssistantApp"
@@ -143,7 +143,7 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline_start"
                 app:layout_constraintTop_toBottomOf="@+id/assistant_app" />
 
-            <com.google.samples.apps.iosched.widget.EventCardView
+            <app.traceindia.covid.client.android.widget.EventCardView
                 android:id="@+id/event_sessions"
                 style="@style/Widget.IOSched.EventCardView"
                 android:layout_width="0dp"
@@ -156,7 +156,7 @@
                 app:eventTitle="@string/event_sessions_title"
                 app:eventTypeLogo="@drawable/event_header_sessions" />
 
-            <com.google.samples.apps.iosched.widget.EventCardView
+            <app.traceindia.covid.client.android.widget.EventCardView
                 android:id="@+id/event_sandbox"
                 style="@style/Widget.IOSched.EventCardView"
                 android:layout_width="0dp"
@@ -169,7 +169,7 @@
                 app:eventTitle="@string/event_sandbox_title"
                 app:eventTypeLogo="@drawable/event_header_sandbox" />
 
-            <com.google.samples.apps.iosched.widget.EventCardView
+            <app.traceindia.covid.client.android.widget.EventCardView
                 android:id="@+id/event_codelabs"
                 style="@style/Widget.IOSched.EventCardView"
                 android:layout_width="0dp"
@@ -182,7 +182,7 @@
                 app:eventTitle="@string/event_codelabs_title"
                 app:eventTypeLogo="@drawable/event_header_codelabs" />
 
-            <com.google.samples.apps.iosched.widget.EventCardView
+            <app.traceindia.covid.client.android.widget.EventCardView
                 android:id="@+id/event_officehours"
                 style="@style/Widget.IOSched.EventCardView"
                 android:layout_width="0dp"
@@ -196,7 +196,7 @@
                 app:eventTypeLogo="@drawable/event_header_office_hours" />
 
             <!-- After hours header is always on dark background -->
-            <com.google.samples.apps.iosched.widget.EventCardView
+            <app.traceindia.covid.client.android.widget.EventCardView
                 android:id="@+id/event_afterhours"
                 style="@style/Widget.IOSched.EventCardView"
                 android:layout_width="0dp"
@@ -210,7 +210,7 @@
                 app:eventTypeLogo="@drawable/event_header_afterhours"
                 app:eventTypeLogoBackground="@color/event_card_header_background_dark"/>
 
-            <com.google.samples.apps.iosched.widget.EventCardView
+            <app.traceindia.covid.client.android.widget.EventCardView
                 android:id="@+id/event_meals"
                 style="@style/Widget.IOSched.EventCardView"
                 android:layout_width="0dp"
@@ -224,7 +224,7 @@
                 app:eventTypeLogo="@drawable/event_header_meals" />
 
             <!-- TODO remove countdownVisibility method -->
-            <com.google.samples.apps.iosched.widget.CountdownView
+            <app.traceindia.covid.client.android.widget.CountdownView
                 android:layout_width="0dp"
                 android:layout_height="@dimen/countdown_height"
                 android:layout_marginEnd="@dimen/onboarding_margins"

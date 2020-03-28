@@ -29,7 +29,7 @@
 
         <variable
             name="announcement"
-            type="com.google.samples.apps.iosched.model.Announcement" />
+            type="app.traceindia.covid.client.android.model.Announcement" />
 
     </data>
 

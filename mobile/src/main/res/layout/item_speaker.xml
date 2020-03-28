@@ -23,11 +23,11 @@
 
         <variable
             name="speaker"
-            type="com.google.samples.apps.iosched.model.Speaker" />
+            type="app.traceindia.covid.client.android.model.Speaker" />
 
         <variable
             name="eventListener"
-            type="com.google.samples.apps.iosched.ui.sessiondetail.SessionDetailEventListener" />
+            type="app.traceindia.covid.client.android.ui.sessiondetail.SessionDetailEventListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

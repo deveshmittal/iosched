@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "540319518774",
+    "firebase_url": "https://covid-traceindia.firebaseio.com",
+    "project_id": "covid-traceindia",
+    "storage_bucket": "covid-traceindia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540319518774:android:7d6120564a6256a78cc897",
+        "android_client_info": {
+          "package_name": "app.traceindia.covid.client.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540319518774-pkg59ub7p8250p5v1qvg6hrafovbdfn7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.traceindia.covid.client.android",
+            "certificate_hash": "34ed5e632d3b93fbe9b9d1ed96f58967b0bf136b"
+          }
+        },
+        {
+          "client_id": "540319518774-dtl6peidul728a85de3s8e1k9oop2ige.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBXbaY0j1WKaAwF00McQBows9Peexavbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540319518774-dtl6peidul728a85de3s8e1k9oop2ige.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

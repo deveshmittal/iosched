@@ -23,14 +23,14 @@
 
         <variable
             name="eventFilter"
-            type="com.google.samples.apps.iosched.ui.schedule.filters.EventFilter" />
+            type="app.traceindia.covid.client.android.ui.schedule.filters.EventFilter" />
 
         <variable
             name="viewModel"
-            type="com.google.samples.apps.iosched.ui.schedule.ScheduleViewModel" />
+            type="app.traceindia.covid.client.android.ui.schedule.ScheduleViewModel" />
     </data>
 
-    <com.google.samples.apps.iosched.ui.schedule.filters.EventFilterView
+    <app.traceindia.covid.client.android.ui.schedule.filters.EventFilterView
         android:id="@+id/filter_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
