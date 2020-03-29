@@ -55,6 +55,14 @@
             app:title="@string/title_map"
             tools:navigationIcon="@drawable/ic_menu" />
 
+        <!--  app:cameraBearing="@dimen/map_camera_bearing"
+            app:cameraTargetLat="@dimen/map_camera_target_lat"
+            app:cameraTargetLng="@dimen/map_camera_target_lng"
+            app:cameraTilt="@dimen/map_camera_tilt"
+            app:cameraZoom="@dimen/map_camera_zoom"
+            app:mapMaxZoom="@{R.dimen.map_viewport_max_zoom}"
+            app:mapMinZoom="@{R.dimen.map_viewport_min_zoom}"-->
+
         <com.google.android.gms.maps.MapView
             android:id="@+id/map"
             android:layout_width="0dp"
@@ -63,16 +71,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar"
-            app:cameraBearing="@dimen/map_camera_bearing"
-            app:cameraTargetLat="@dimen/map_camera_target_lat"
-            app:cameraTargetLng="@dimen/map_camera_target_lng"
-            app:cameraTilt="@dimen/map_camera_tilt"
-            app:cameraZoom="@dimen/map_camera_zoom"
+
+
             app:isIndoorEnabled="@{false}"
             app:isMapToolbarEnabled="@{false}"
             app:mapCenter="@{viewModel.mapCenterEvent}"
-            app:mapMaxZoom="@{R.dimen.map_viewport_max_zoom}"
-            app:mapMinZoom="@{R.dimen.map_viewport_min_zoom}"
             app:mapStyle="@{viewModel.mapVariant.styleResId}"
             app:mapTileProvider="@{viewModel.mapVariant}"
             app:mapViewport="@{viewModel.conferenceLocationBounds}"

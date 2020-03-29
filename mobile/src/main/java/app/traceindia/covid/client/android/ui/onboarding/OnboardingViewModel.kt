@@ -32,15 +32,15 @@ class OnboardingViewModel @Inject constructor(
     signInViewModelDelegate: SignInViewModelDelegate
 ) : ViewModel(), SignInViewModelDelegate by signInViewModelDelegate {
 
-    private val _navigateToMainActivity = MutableLiveData<Event<Unit>>()
-    val navigateToMainActivity: LiveData<Event<Unit>> = _navigateToMainActivity
+    private val _navigateToAuthActivity = MutableLiveData<Event<Unit>>()
+    val navigateToAuthActivity: LiveData<Event<Unit>> = _navigateToAuthActivity
 
     private val _navigateToSignInDialogAction = MutableLiveData<Event<Unit>>()
     val navigateToSignInDialogAction: LiveData<Event<Unit>> = _navigateToSignInDialogAction
 
     fun getStartedClick() {
         onboardingCompleteActionUseCase(true)
-        _navigateToMainActivity.postValue(Event(Unit))
+        _navigateToAuthActivity.postValue(Event(Unit))
     }
 
     fun onSigninClicked() {

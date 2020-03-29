@@ -66,6 +66,7 @@ import app.traceindia.covid.client.android.ui.schedule.filters.EventFilter
 import app.traceindia.covid.client.android.ui.schedule.filters.LoadEventFiltersUseCase
 import app.traceindia.covid.client.android.ui.signin.FirebaseSignInViewModelDelegate
 import app.traceindia.covid.client.android.ui.signin.SignInViewModelDelegate
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.CoreMatchers.not

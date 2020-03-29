@@ -27,7 +27,9 @@ class MapTileProvider(
 
     companion object {
         // Order of format arguments: variant name, tile size, zoom level, tile x, tile y
-        private const val BASE_URL = BuildConfig.MAP_TILE_URL_BASE + "/%s/%d/%d/%d_%d.png"
+        //private const val BASE_URL = BuildConfig.MAP_TILE_URL_BASE + "/%s/%d/%d/%d_%d.png"
+        private const val BASE_URL = "/%s/%d/%d/%d_%d.png"
+
 
         private const val BASE_TILE_SIZE = 256
 

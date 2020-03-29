@@ -25,6 +25,7 @@ import app.traceindia.covid.client.android.shared.domain.prefs.OnboardingComplet
 import app.traceindia.covid.client.android.test.util.SyncTaskExecutorRule
 import app.traceindia.covid.client.android.ui.LaunchDestination.MAIN_ACTIVITY
 import app.traceindia.covid.client.android.ui.LaunchDestination.ONBOARDING
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.junit.Assert.assertEquals
 import org.junit.Rule

@@ -25,6 +25,7 @@ import app.traceindia.covid.client.android.shared.result.Result
 import app.traceindia.covid.client.android.test.util.SyncTaskExecutorRule
 import app.traceindia.covid.client.android.test.util.fakes.FakePreferenceStorage
 import app.traceindia.covid.client.android.ui.schedule.FakeObserveUserAuthStateUseCase
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertFalse

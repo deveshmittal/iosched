@@ -56,11 +56,7 @@ import app.traceindia.covid.client.android.ui.messages.SnackbarMessageManager
 import app.traceindia.covid.client.android.ui.reservation.RemoveReservationDialogParameters
 import app.traceindia.covid.client.android.ui.schedule.TestUserEventDataSource
 import app.traceindia.covid.client.android.ui.signin.SignInViewModelDelegate
-import com.nhaarman.mockito_kotlin.any
-import com.nhaarman.mockito_kotlin.doNothing
-import com.nhaarman.mockito_kotlin.mock
-import com.nhaarman.mockito_kotlin.verify
-import com.nhaarman.mockito_kotlin.whenever
+import com.nhaarman.mockito_kotlin.*
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.CoreMatchers.not

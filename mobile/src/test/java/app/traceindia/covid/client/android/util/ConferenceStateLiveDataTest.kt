@@ -27,6 +27,7 @@ import app.traceindia.covid.client.android.test.util.time.FixedTimeExecutorRule
 import app.traceindia.covid.client.android.util.ConferenceState.ENDED
 import app.traceindia.covid.client.android.util.ConferenceState.STARTED
 import app.traceindia.covid.client.android.util.ConferenceState.UPCOMING
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.equalTo

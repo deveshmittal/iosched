@@ -24,6 +24,7 @@ import app.traceindia.covid.client.android.shared.util.checkAllMatched
 import app.traceindia.covid.client.android.shared.util.viewModelProvider
 import app.traceindia.covid.client.android.ui.LaunchDestination.MAIN_ACTIVITY
 import app.traceindia.covid.client.android.ui.LaunchDestination.ONBOARDING
+import app.traceindia.covid.client.android.ui.auth.AuthActivity
 import app.traceindia.covid.client.android.ui.onboarding.OnboardingActivity
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
@@ -43,6 +44,7 @@ class LauncherActivity : DaggerAppCompatActivity() {
             when (destination) {
                 MAIN_ACTIVITY -> startActivity(Intent(this, MainActivity::class.java))
                 ONBOARDING -> startActivity(Intent(this, OnboardingActivity::class.java))
+                LaunchDestination.AUTH_ACTIVITY -> startActivity(Intent(this, AuthActivity::class.java))
             }.checkAllMatched
             finish()
         })

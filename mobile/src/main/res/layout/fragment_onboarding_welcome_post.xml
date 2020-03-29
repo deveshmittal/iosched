@@ -53,6 +53,7 @@
         style="@style/Widget.IOSched.OnboardingTextSmall"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/hind_medium"
         android:text="@string/help_prevent_covid"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@id/spacer"

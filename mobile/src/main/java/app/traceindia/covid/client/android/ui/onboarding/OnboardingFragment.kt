@@ -32,6 +32,7 @@ import app.traceindia.covid.client.android.shared.result.EventObserver
 import app.traceindia.covid.client.android.shared.util.TimeUtils
 import app.traceindia.covid.client.android.shared.util.viewModelProvider
 import app.traceindia.covid.client.android.ui.MainActivity
+import app.traceindia.covid.client.android.ui.auth.AuthActivity
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
@@ -81,9 +82,9 @@ class OnboardingFragment : DaggerFragment() {
             }
         }
 
-        onboardingViewModel.navigateToMainActivity.observe(this, EventObserver {
+        onboardingViewModel.navigateToAuthActivity.observe(viewLifecycleOwner, EventObserver {
             requireActivity().run {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, AuthActivity::class.java))
                 finish()
             }
         })

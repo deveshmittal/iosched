@@ -58,7 +58,7 @@ class OnboardingViewModelTest {
         verify(prefs).onboardingCompleted = true
 
         // And that the navigation event was fired
-        val navigateEvent = LiveDataTestUtil.getValue(viewModel.navigateToMainActivity)
+        val navigateEvent = LiveDataTestUtil.getValue(viewModel.navigateToAuthActivity)
         assertNotNull(navigateEvent?.getContentIfNotHandled())
     }
 

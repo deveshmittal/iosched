@@ -34,6 +34,7 @@ import kotlin.reflect.KProperty
  * Storage for app and user preferences.
  */
 interface PreferenceStorage {
+    var onAuthCompleted: Boolean
     var onboardingCompleted: Boolean
     var scheduleUiHintsShown: Boolean
     var notificationsPreferenceShown: Boolean
@@ -72,6 +73,7 @@ class SharedPreferenceStorage @Inject constructor(context: Context) : Preference
             PREF_DARK_MODE_ENABLED -> observableSelectedThemeResult.value = selectedTheme
         }
     }
+    override var onAuthCompleted: Boolean by BooleanPreference(prefs, AUTH_COMPLETED, false)
 
     override var onboardingCompleted by BooleanPreference(prefs, PREF_ONBOARDING, false)
 
@@ -116,6 +118,7 @@ class SharedPreferenceStorage @Inject constructor(context: Context) : Preference
     override var codelabsInfoShown by BooleanPreference(prefs, PREF_CODELABS_INFO_SHOWN, false)
 
     companion object {
+        const val AUTH_COMPLETED = "auth_completed"
         const val PREFS_NAME = "iosched"
         const val PREF_ONBOARDING = "pref_onboarding"
         const val PREF_SCHED_UI_HINTS_SHOWN = "pref_sched_ui_hints_shown"

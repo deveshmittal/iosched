@@ -22,9 +22,11 @@ import app.traceindia.covid.client.android.di.DaggerAppComponent
 import app.traceindia.covid.client.android.shared.analytics.AnalyticsHelper
 import app.traceindia.covid.client.android.util.CrashlyticsTree
 import com.jakewharton.threetenabp.AndroidThreeTen
+import com.yariksoffice.lingver.Lingver
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import timber.log.Timber
+import java.util.*
 import javax.inject.Inject
 
 /**
@@ -37,6 +39,8 @@ class MainApplication : DaggerApplication() {
     override fun onCreate() {
         // ThreeTenBP for times and dates, called before super to be available for objects
         AndroidThreeTen.init(this)
+        Lingver.init(this, Locale("mr"))
+        Lingver.getInstance().setLocale(this, Locale("mr"))
 
         // Enable strict mode before Dagger creates graph
         if (BuildConfig.DEBUG) {
@@ -48,6 +52,7 @@ class MainApplication : DaggerApplication() {
             Timber.plant(Timber.DebugTree())
         } else {
             Timber.plant(CrashlyticsTree())
+
         }
     }
 

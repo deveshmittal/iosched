@@ -53,6 +53,9 @@
             android:name=".ui.MainActivity" />
 
         <activity
+            android:name=".ui.auth.AuthActivity" />
+
+        <activity
             android:name=".ui.onboarding.OnboardingActivity"
             android:theme="@style/AppTheme.Onboarding" />
 
@@ -79,9 +82,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
 
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"

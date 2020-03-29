@@ -22,6 +22,7 @@ import app.traceindia.covid.client.android.shared.data.signin.AuthenticatedUserI
 import app.traceindia.covid.client.android.shared.result.Event
 import app.traceindia.covid.client.android.ui.signin.SignInEvent
 import app.traceindia.covid.client.android.ui.signin.SignInViewModelDelegate
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 
 class FakeSignInViewModelDelegate : SignInViewModelDelegate {

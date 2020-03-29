@@ -160,4 +160,3 @@ dependencies {
     testImplementation "androidx.arch.core:core-testing:$rootProject.archTestingVersion"
 }
 
-apply plugin: 'com.google.gms.google-services'

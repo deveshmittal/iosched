@@ -33,5 +33,8 @@ class FakePreferenceStorage(
     override var selectedFilters: String? = null,
     override var selectedTheme: String? = null,
     override var observableSelectedTheme: LiveData<String> = MutableLiveData(),
-    override var codelabsInfoShown: Boolean = true
-) : PreferenceStorage
+    override var codelabsInfoShown: Boolean = true,
+    override var onAuthCompleted: Boolean = false
+) : PreferenceStorage {
+
+}

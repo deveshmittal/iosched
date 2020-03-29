@@ -37,6 +37,7 @@ import app.traceindia.covid.client.android.test.util.time.FakeIntervalMapperRule
 import app.traceindia.covid.client.android.test.util.time.FixedTimeExecutorRule
 import app.traceindia.covid.client.android.ui.schedule.TestUserEventDataSource
 import app.traceindia.covid.client.android.ui.signin.SignInViewModelDelegate
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.junit.Assert.assertEquals
 import org.junit.Before

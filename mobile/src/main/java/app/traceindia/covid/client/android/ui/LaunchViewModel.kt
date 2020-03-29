@@ -19,6 +19,7 @@ package app.traceindia.covid.client.android.ui
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import app.traceindia.covid.client.android.shared.domain.prefs.AuthCompletedUseCase
 import app.traceindia.covid.client.android.shared.domain.prefs.OnboardingCompletedUseCase
 import app.traceindia.covid.client.android.shared.result.Event
 import app.traceindia.covid.client.android.shared.result.Result
@@ -43,7 +44,7 @@ class LaunchViewModel @Inject constructor(
             if ((it as? Result.Success)?.data == false) {
                 Event(LaunchDestination.ONBOARDING)
             } else {
-                Event(LaunchDestination.MAIN_ACTIVITY)
+                Event(LaunchDestination.AUTH_ACTIVITY)
             }
         }
     }
@@ -51,5 +52,6 @@ class LaunchViewModel @Inject constructor(
 
 enum class LaunchDestination {
     ONBOARDING,
-    MAIN_ACTIVITY
+    MAIN_ACTIVITY,
+    AUTH_ACTIVITY
 }

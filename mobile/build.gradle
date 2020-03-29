@@ -63,26 +63,31 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
+        debug {
+            versionNameSuffix = '-debug'
+            manifestPlaceholders = [crashlyticsEnabled: false]
+            /*resValue "string",
+                    "google_maps_key",
+                    "AIzaSyAhJx57ikQH9rYc8IT8W3d2As5cGHMBvuo"
+
+             */
+
+            buildConfigField "String", "MAP_TILE_URL_BASE", "\"https://storage.googleapis.com/io2019-festivus/images/maptiles\""
+
+        }
+
         release {
             minifyEnabled true
             // TODO: b/120517460 shrinkResource can't be used with dynamic-feature at this moment.
             //       Need to ensure the app size has not increased
             manifestPlaceholders = [crashlyticsEnabled: true]
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            resValue "string",
+            /*resValue "string",
                     "google_maps_key",
                     "AIzaSyD5jqwKMm1SeoYsW25vxCXfTlhDBeZ4H5c"
+                    */
 
             buildConfigField "String", "MAP_TILE_URL_BASE", "\"https://storage.googleapis.com/io2019-festivus-prod/images/maptiles\""
-        }
-        debug {
-            versionNameSuffix = '-debug'
-            manifestPlaceholders = [crashlyticsEnabled: false]
-            resValue "string",
-                    "google_maps_key",
-                    "AIzaSyAhJx57ikQH9rYc8IT8W3d2As5cGHMBvuo"
-
-            buildConfigField "String", "MAP_TILE_URL_BASE", "\"https://storage.googleapis.com/io2019-festivus/images/maptiles\""
         }
         staging {
             initWith debug
@@ -123,13 +128,14 @@ android {
         // See lint.xml for rules configuration
     }
 
-    testBuildType "staging"
+    testBuildType "debug"
 
 }
 
 dependencies {
     implementation project(':shared')
     implementation project(':ar')
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
     testImplementation project(':test-shared')
     testImplementation project(':androidTest-shared')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -203,6 +209,8 @@ dependencies {
     implementation "com.google.code.gson:gson:$gsonVersion"
 
     implementation "com.google.ar:core:$rootProject.arcoreVersion"
+
+    implementation "com.github.YarikSOffice:lingver:1.2.1"
 }
 
 apply plugin: 'com.google.gms.google-services'

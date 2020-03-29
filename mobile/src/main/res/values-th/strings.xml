@@ -269,5 +269,11 @@
     <string name="codelabs_website">เว็บไซต์ Codelabs</string>
     <string name="codelab_duration">ระยะเวลา: %1$d นาที</string>
     <string name="start_codelab">เริ่มใช้ Codelab</string>
-    <string name="help_prevent_covid">Help prevent the spread of Covid by opting into collection of your location data. This helps us in isolating Covid cases.</string>
+    <string name="help_prevent_covid">Help prevent the spread of Covid by opting into collection of your location data. This helps us in isolating Covid cases and help us protect you and your loved ones.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="continue_">Continue</string>
+    <string name="invalid_phone_number_error">The phone number is invalid</string>
+    <string name="sms_code">SMS Code</string>
+    <string name="invalid_code_number_error">The OTP Code entered by you is invalid</string>
+    <string name="resend_code">Resend OTP Code</string>
 </resources>
