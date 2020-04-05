@@ -21,6 +21,7 @@ package app.traceindia.covid.client.android.ui
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import app.traceindia.covid.client.android.androidtest.util.LiveDataTestUtil
 import app.traceindia.covid.client.android.shared.data.prefs.PreferenceStorage
+import app.traceindia.covid.client.android.shared.domain.prefs.AuthCompletedUseCase
 import app.traceindia.covid.client.android.shared.domain.prefs.OnboardingCompletedUseCase
 import app.traceindia.covid.client.android.test.util.SyncTaskExecutorRule
 import app.traceindia.covid.client.android.ui.LaunchDestination.MAIN_ACTIVITY
@@ -51,7 +52,8 @@ class LaunchViewModelTest {
             on { onboardingCompleted }.doReturn(false)
         }
         val onboardingCompletedUseCase = OnboardingCompletedUseCase(prefs)
-        val viewModel = LaunchViewModel(onboardingCompletedUseCase)
+        val authCompletedUseCase = AuthCompletedUseCase(prefs)
+        val viewModel = LaunchViewModel(onboardingCompletedUseCase, authCompletedUseCase)
 
         // When launchDestination is observed
         // Then verify user is navigated to the onboarding activity
@@ -64,9 +66,11 @@ class LaunchViewModelTest {
         // Given that user *has* completed onboarding
         val prefs = mock<PreferenceStorage> {
             on { onboardingCompleted }.doReturn(true)
+            on { onAuthCompleted }.doReturn(true)
         }
         val onboardingCompletedUseCase = OnboardingCompletedUseCase(prefs)
-        val viewModel = LaunchViewModel(onboardingCompletedUseCase)
+        val authCompletedUseCase = AuthCompletedUseCase(prefs)
+        val viewModel = LaunchViewModel(onboardingCompletedUseCase, authCompletedUseCase)
 
         // When launchDestination is observed
         // Then verify user is navigated to the main activity

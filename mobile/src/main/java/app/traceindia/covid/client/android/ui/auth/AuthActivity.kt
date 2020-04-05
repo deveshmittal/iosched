@@ -16,12 +16,16 @@
 
 package app.traceindia.covid.client.android.ui.auth
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import app.traceindia.covid.client.android.BuildConfig
 import app.traceindia.covid.client.android.R
+import app.traceindia.covid.client.android.ui.MainActivity
+import app.traceindia.covid.client.android.ui.dialogs.DebugDialog
 
 class AuthActivity : AppCompatActivity() {
 
@@ -49,17 +53,19 @@ class AuthActivity : AppCompatActivity() {
                 AuthViewModel.State.ENTERING_VERIFICATION_CODE -> transaction.replace(R.id.auth_fl, VerificationCodeFragment(), VERIFICATION_CODE_FRAGMENT)
                         .addToBackStack(VERIFICATION_CODE_FRAGMENT)
                         .commit()
-                AuthViewModel.State.LOGGED_IN -> openFakeMap()
+                AuthViewModel.State.LOGGED_IN -> openMainActivity()
                 AuthViewModel.State.RESEND_CODE -> authViewModel.resendVerificationCode()
-                else -> {}
+                else -> {
+
+                }
             }
         })
     }
 
-    private fun openFakeMap() {
-        Toast.makeText(this, "Logged In!", Toast.LENGTH_LONG).show()
-        /*val intent = Intent(this, MapsActivity::class.java)
-        startActivity(intent)*/
+    private fun openMainActivity() {
+        if(BuildConfig.DEBUG) Toast.makeText(this, "Logged In!", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onBackPressed() {

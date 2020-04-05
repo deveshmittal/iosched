@@ -156,6 +156,9 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$rootProject.mockitoVersion"
     testImplementation "com.nhaarman:mockito-kotlin:$rootProject.mockitoKotlinVersion"
 
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.1'
+
+
     // unit tests livedata
     testImplementation "androidx.arch.core:core-testing:$rootProject.archTestingVersion"
 }

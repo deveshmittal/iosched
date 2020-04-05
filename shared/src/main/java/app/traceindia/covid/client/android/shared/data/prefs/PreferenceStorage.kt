@@ -46,6 +46,8 @@ interface PreferenceStorage {
     var preferConferenceTimeZone: Boolean
     var selectedFilters: String?
     var selectedTheme: String?
+    var userToken: String?
+    var userPhoneNumber: String?
     var observableSelectedTheme: LiveData<String>
     var codelabsInfoShown: Boolean
 }
@@ -108,6 +110,11 @@ class SharedPreferenceStorage @Inject constructor(context: Context) : Preference
         prefs, PREF_DARK_MODE_ENABLED, Theme.SYSTEM.storageKey
     )
 
+    override var userToken by StringPreference(prefs, PREF_USER_TOKEN, null)
+
+    override var userPhoneNumber by StringPreference(prefs, PREF_PHONE_NUMBER, null)
+
+
     override var observableSelectedTheme: LiveData<String>
         get() {
             observableSelectedThemeResult.value = selectedTheme
@@ -131,6 +138,8 @@ class SharedPreferenceStorage @Inject constructor(context: Context) : Preference
         const val PREF_SELECTED_FILTERS = "pref_selected_filters"
         const val PREF_DARK_MODE_ENABLED = "pref_dark_mode"
         const val PREF_CODELABS_INFO_SHOWN = "pref_codelabs_info_shown"
+        const val PREF_USER_TOKEN = "pref_user_token"
+        const val PREF_PHONE_NUMBER = "pref_phone_number"
     }
 
     fun registerOnPreferenceChangeListener(listener: OnSharedPreferenceChangeListener) {

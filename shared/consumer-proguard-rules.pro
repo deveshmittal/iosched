@@ -33,3 +33,6 @@
 -dontwarn androidx.cardview.widget.CardView
 
 -keepclassmembers class app.traceindia.covid.client.android.model.** { <fields>; }
+
+-keepresourcefiles assets/io/michaelrocks/libphonenumber/android/**
+

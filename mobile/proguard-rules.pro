@@ -30,3 +30,7 @@
 
 # Firebase Functions
 -keep class org.json.** { *; }
+-keepresourcefiles assets/io/michaelrocks/libphonenumber/android/**
+-keep class com.google.android.material.tabs.** { *; }
+-keep class com.yariksoffice.lingver.** { *; }
+

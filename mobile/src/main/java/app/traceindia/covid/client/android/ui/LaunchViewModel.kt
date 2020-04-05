@@ -30,20 +30,24 @@ import javax.inject.Inject
  * Logic for determining which screen to send users to on app launch.
  */
 class LaunchViewModel @Inject constructor(
-    onboardingCompletedUseCase: OnboardingCompletedUseCase
+    onboardingCompletedUseCase: OnboardingCompletedUseCase,
+    authCompletedUseCase: AuthCompletedUseCase
 ) : ViewModel() {
 
     private val onboardingCompletedResult = MutableLiveData<Result<Boolean>>()
+    private val authCompletedResult = MutableLiveData<Result<Boolean>>()
     val launchDestination: LiveData<Event<LaunchDestination>>
 
     init {
         // Check if onboarding has already been completed and then navigate the user accordingly
         onboardingCompletedUseCase(Unit, onboardingCompletedResult)
+        authCompletedUseCase(false, authCompletedResult)
         launchDestination = onboardingCompletedResult.map {
             // If this check fails, prefer to launch main activity than show onboarding too often
             if ((it as? Result.Success)?.data == false) {
                 Event(LaunchDestination.ONBOARDING)
             } else {
+
                 Event(LaunchDestination.AUTH_ACTIVITY)
             }
         }

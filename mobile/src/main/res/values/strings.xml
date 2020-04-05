@@ -134,7 +134,7 @@
     <string name="firebase_auth_no_network_connection" translation_description="Snackbar message when there is no network connectivity.">No internet connection</string>
     <string name="firebase_auth_unknown_error" translation_description="Snackbar message when Firebase Auth has an unknown error.">Unknown error</string>
 
-    <string name="dialog_sign_out_content" translation_description="The content of the dialog. Used to confirm that the user wants to sign out.">All saved events, seat reservations and session ratings (if an attendee) remain synced to your account.</string>
+    <string name="dialog_sign_out_content" translation_description="The content of the dialog. Used to confirm that the user wants to sign out.">Your location and permissions remain synced to your account.</string>
     <string name="sign_out" translation_description="The description of a button to sign out.">Sign out</string>
 
     <string name="manage_google_account" translation_description="Text for a button allowing the user to manage their Google account.">Manage your Google account</string>
@@ -362,5 +362,8 @@
     <string name="invalid_code_number_error">The OTP Code entered by you is invalid</string>
     <string name="resend_code">Resend OTP Code</string>
     <string name="log_in">Login</string>
+    <string name="register_your_number">Register your mobile number</string>
+    <string name="well_contatct">We\'ll contact you if you were in proximity of a Covid patient.</string>
+    <string name="verify_otp">Verify OTP</string>
 
 </resources>

@@ -10,5 +10,9 @@
     <string name="invalid_code_number_error">आपण प्रविष्ट केलेला OTP कोड अवैध आहे</string>
     <string name="resend_code">OTP कोड पुन्हा पाठवा</string>
     <string name="log_in">Login</string>
+    <string name="register_your_number">आपला मोबाइल नंबर नोंदवा</string>
+    <string name="well_contatct">आपण कोविड पेशंटच्या जवळ असल्यास आम्ही आपल्याशी संपर्क साधू.</string>
+    <string name="verify_otp">OTP ते सिद्ध करा</string>
+
 
 </resources>

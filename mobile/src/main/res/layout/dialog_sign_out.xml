@@ -93,6 +93,7 @@
             style="@style/Widget.IOSched.AccountDialog.ManageAccountButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/manage_google_account"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/guideline_start"

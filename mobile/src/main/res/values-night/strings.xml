@@ -23,4 +23,5 @@
     <string name="sms_code">SMS Code</string>
     <string name="invalid_code_number_error">The OTP Code entered by you is invalid</string>
     <string name="resend_code">Resend OTP Code</string>
+    <string name="register_your_number">Register your mobile number</string>
 </resources>

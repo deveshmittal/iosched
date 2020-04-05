@@ -20,8 +20,11 @@ import app.traceindia.covid.client.android.shared.data.prefs.PreferenceStorage
 import app.traceindia.covid.client.android.shared.domain.UseCase
 import javax.inject.Inject
 
-open class AuthCompletedUseCase @Inject constructor(
+open class AuthCompleteActionUseCase @Inject constructor(
         private val preferenceStorage: PreferenceStorage
-) : UseCase<Boolean, Boolean>() {
-    override fun execute(parameters: Boolean): Boolean = preferenceStorage.onAuthCompleted
+) : UseCase<String, Unit>() {
+    override fun execute(parameters: String) {
+        preferenceStorage.userToken = parameters
+        preferenceStorage.userPhoneNumber = parameters
+    }
 }

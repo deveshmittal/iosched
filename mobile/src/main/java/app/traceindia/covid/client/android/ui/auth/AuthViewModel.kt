@@ -16,10 +16,21 @@
 
 package app.traceindia.covid.client.android.ui.auth
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import app.traceindia.covid.client.android.BuildConfig
+import app.traceindia.covid.client.android.shared.data.prefs.SharedPreferenceStorage
+import app.traceindia.covid.client.android.shared.domain.prefs.AuthCompleteActionUseCase
+import app.traceindia.covid.client.android.shared.domain.prefs.AuthCompletedUseCase
+import app.traceindia.covid.client.android.shared.util.PhoneNumberAuthUtils
+import javax.inject.Inject
 
-class AuthViewModel : ViewModel(), AuthListener {
+class AuthViewModel @Inject constructor() : ViewModel(), AuthListener {
+
+
+    lateinit var authCompleteActionUseCase : AuthCompleteActionUseCase
+    lateinit var authCompletedUseCase : AuthCompletedUseCase
 
     companion object {
         private const val ERROR_INVALID_PHONE_NUMBER = "ERROR_INVALID_PHONE_NUMBER"
@@ -31,19 +42,29 @@ class AuthViewModel : ViewModel(), AuthListener {
     var phoneNumber: String = ""
     var smsCode: String = ""
 
-    enum class State {
-        ENTERING_PHONE_NUMBER,
-        INVALID_PHONE_NUMBER,
-        ENTERING_VERIFICATION_CODE,
-        LOGGED_IN,
-        RESEND_CODE,
-        INVALID_CODE,
-        TIME_OUT
+    enum class State(state :String) {
+        ENTERING_PHONE_NUMBER("Entering Phone Number"),
+        INVALID_PHONE_NUMBER("Invalid Number"),
+        ENTERING_VERIFICATION_CODE("Entering Verfication Code"),
+        LOGGED_IN("Logged In"),
+        RESEND_CODE("Resend Code"),
+        INVALID_CODE("Invalid Code"),
+        TIME_OUT("Timed Out"),
+        UNKNOWN_ERROR_CODE("Unknown Error Occured")
     }
 
-    fun verifyPhoneNumber(number: String) {
-        phoneNumber = number
-        authProvider.verifyPhoneNumber(number)
+    fun verifyPhoneNumber(context: Context ,number: String) {
+        phoneNumber = number.trim()
+        authCompleteActionUseCase = AuthCompleteActionUseCase(SharedPreferenceStorage(context))
+        authCompletedUseCase = AuthCompletedUseCase(SharedPreferenceStorage(context))
+        if(!PhoneNumberAuthUtils.isPhoneNumberValid(number)){
+            state.value = State.INVALID_PHONE_NUMBER
+            return
+        }
+        if(!number.contains('+')){
+            phoneNumber = "+${PhoneNumberAuthUtils.getDeviceCallingCode(context)}${number}"
+        }
+        authProvider.verifyPhoneNumber(phoneNumber)
     }
 
     fun resendVerificationCode() {
@@ -72,6 +93,8 @@ class AuthViewModel : ViewModel(), AuthListener {
     }
 
     override fun onSuccess() {
+        authCompletedUseCase(true)
+        authCompleteActionUseCase(phoneNumber)
         state.value = State.LOGGED_IN
     }
 
@@ -79,12 +102,14 @@ class AuthViewModel : ViewModel(), AuthListener {
         when(errorCode) {
             ERROR_INVALID_PHONE_NUMBER -> state.value = State.INVALID_PHONE_NUMBER
             ERROR_INVALID_VERIFICATION_CODE -> state.value = State.INVALID_CODE
+            else -> state.value = State.UNKNOWN_ERROR_CODE
         }
     }
 
     override fun onResendCode() {
         state.value = State.RESEND_CODE
     }
+
 
     override fun onTimeOut() {
         state.value = State.TIME_OUT

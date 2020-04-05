@@ -65,7 +65,12 @@ class PhoneNumberFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         when (view) {
-            continue_btn -> authViewModel.verifyPhoneNumber(phone_number_et.text.toString())
+            continue_btn -> {
+                context.let {
+                    authViewModel.verifyPhoneNumber(context = requireContext(), number = phone_number_et.text.toString())
+                }
+
+            }
         }
     }
 }

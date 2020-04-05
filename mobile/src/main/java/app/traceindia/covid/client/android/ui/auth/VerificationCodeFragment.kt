@@ -15,6 +15,7 @@
  */
 
 package app.traceindia.covid.client.android.ui.auth
+
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -52,24 +53,28 @@ class VerificationCodeFragment : Fragment(), View.OnClickListener {
 
         log_in_btn.setOnClickListener(this)
         resend_code_btn.setOnClickListener(this)
+        toolbar.setNavigationOnClickListener { _ ->
+            if (this.isAdded) requireActivity().onBackPressed()
+        }
 
         log_in_btn.isEnabled = sms_code_et.text?.isNotEmpty() ?: false
         resend_code_btn.isEnabled = false
 
         authViewModel.state.observe(viewLifecycleOwner, Observer {
-            when(it) {
+            when (it) {
                 AuthViewModel.State.TIME_OUT -> resend_code_btn.isEnabled = true
                 AuthViewModel.State.INVALID_CODE -> sms_code_et.error = getString(R.string.invalid_code_number_error)
-                else -> {}
+                else -> {
+                }
             }
         })
     }
 
     override fun onClick(view: View?) {
-        when(view) {
+        when (view) {
             log_in_btn -> authViewModel.signIn(sms_code_et.text.toString())
             resend_code_btn -> {
-                authViewModel.verifyPhoneNumber(authViewModel.phoneNumber)
+                authViewModel.verifyPhoneNumber(requireContext(), authViewModel.phoneNumber)
                 resend_code_btn.isEnabled = false
             }
         }

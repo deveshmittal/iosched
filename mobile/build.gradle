@@ -104,7 +104,7 @@ android {
         enabled true
     }
 
-    signingConfigs {
+    /*signingConfigs {
         // We need to sign debug builds with a debug key to make firebase auth happy
         debug {
             storeFile file("../debug.keystore")
@@ -112,7 +112,7 @@ android {
             keyPassword "android"
             storePassword "android"
         }
-    }
+    }*/
 
     // debug and release variants share the same source dir
     sourceSets {
@@ -135,7 +135,6 @@ android {
 dependencies {
     implementation project(':shared')
     implementation project(':ar')
-    implementation 'com.google.firebase:firebase-auth:19.2.0'
     testImplementation project(':test-shared')
     testImplementation project(':androidTest-shared')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -179,10 +178,12 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
     annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
 
-    // Fabric and Firebase
-    implementation "com.firebaseui:firebase-ui-auth:$rootProject.firebaseUiVersion"
     implementation "com.crashlytics.sdk.android:crashlytics:$crashlyticsVersion"
     implementation "com.google.firebase:firebase-analytics:$rootProject.firebaseAnalyticsVersion"
+    implementation "com.google.firebase:firebase-auth:$rootProject.firebaseAuthVersion"
+    implementation "com.firebaseui:firebase-ui-auth:$rootProject.firebaseUiVersion"
+
+
 
     // Date and time API for Java.
     implementation "com.jakewharton.threetenabp:threetenabp:$rootProject.threetenabpVersion"
@@ -211,6 +212,25 @@ dependencies {
     implementation "com.google.ar:core:$rootProject.arcoreVersion"
 
     implementation "com.github.YarikSOffice:lingver:1.2.1"
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.1'
+
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
+
+
+    implementation 'com.jakewharton.rxbinding3:rxbinding-core:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-drawerlayout:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-leanback:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-recyclerview:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-viewpager:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-viewpager2:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-material:3.1.0'
+
+
 }
 
 apply plugin: 'com.google.gms.google-services'
